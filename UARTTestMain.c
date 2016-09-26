@@ -70,9 +70,9 @@ int main(void){
 			GPIO_PORTF_DATA_R &= 0x04;															//used to clear data port, turn off other leds 
 			GPIO_PORTF_DATA_R ^= 0x04;															//turn on Blue LED, and toggle it.
 			if((GPIO_PORTF_DATA_R &= 0x04) == 0){										//check if Blue LED is off
-				UART_OutString("Blue LED is off");OutCRLF();}					//Display RED Blue off.
+				UART_OutString("Blue LED is off");OutCRLF();}					//Display Blue off.
 			else{
-				UART_OutString("Blue LED is on");OutCRLF();}					//Display RED Blue on.
+				UART_OutString("Blue LED is on");OutCRLF();}					//Display Blue on.
 		}
 		else{
 			UART_OutString("InString: ");
