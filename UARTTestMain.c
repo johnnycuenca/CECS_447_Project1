@@ -87,14 +87,7 @@ int main(void){
 void display(void){
 		Nokia5110_Clear(); 
 		Nokia5110_SetCursor(0,2);
-		Nokia5110_OutString(string);// Used to display a seperator between the two 
-//		Nokia5110_SetCursor(0,3);						//sencors.
-//		Nokia5110_OutString("     || ");
-//		Nokia5110_SetCursor(0,4);
-//		Nokia5110_OutString("     || ");
-//		Nokia5110_SetCursor(0,5);
-//		Nokia5110_OutString("     || ");
-//		Nokia5110_SetCursor(5,0);          
+		Nokia5110_OutString(string);// Used to display a seperator between the two          
 }
 
 void Delay(unsigned long ulCount){// Used to produce a 50hz delay in the main.
