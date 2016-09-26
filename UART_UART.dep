@@ -1,0 +1,19 @@
+Dependencies for Project 'UART', Target 'UART': (DO NOT MODIFY !)
+F (.\startup.s)(0x519AFB04)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\PLL.c)(0x52325BC0)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (PLL.h)(0x52325BC0)
+F (.\UART.c)(0x57E06462)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\uart.o --omf_browse .\uart.crf --depend .\uart.d)
+I (UART.h)(0x57E0646D)
+I (tm4c123gh6pm.h)(0x51D4D322)
+F (.\UARTTestMain.c)(0x57E9A647)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\uarttestmain.o --omf_browse .\uarttestmain.crf --depend .\uarttestmain.d)
+I (PLL.h)(0x52325BC0)
+I (UART.h)(0x57E0646D)
+I (tm4c123gh6pm.h)(0x51D4D322)
+I (EdgeTrigured_Init.h)(0x57E065E9)
+I (Nokia5110.h)(0x57E98E83)
+F (.\EdgeTrigured_Init.c)(0x57E0647B)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\edgetrigured_init.o --omf_browse .\edgetrigured_init.crf --depend .\edgetrigured_init.d)
+I (tm4c123gh6pm.h)(0x51D4D322)
+I (EdgeTrigured_Init.h)(0x57E065E9)
+I (UART.h)(0x57E0646D)
+F (.\Nokia5110.c)(0x57E98EC9)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\nokia5110.o --omf_browse .\nokia5110.crf --depend .\nokia5110.d)
+I (Nokia5110.h)(0x57E98E83)
