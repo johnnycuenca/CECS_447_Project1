@@ -23,6 +23,7 @@
 #include "tm4c123gh6pm.h"
 #include "EdgeTrigured_Init.h"
 #include "Nokia5110.h"
+#include "ADC.h"
 
 void display(void);
 void Delay(unsigned long);
@@ -39,13 +40,13 @@ int main(void){
   Nokia5110_Init();	 //Nokia Initialization
 	PLL_Init();							//initialze PLL at 50Mhz clock
   UART_Init();            //initialize UART on Port A with baud rate of 115,200
-  OutCRLF();
-	UART_OutString("CECS 447");
-  OutCRLF();
-	UART_OutString("Project 1: Part 1");
-  OutCRLF();
-	UART_OutString("Johnny Cuenca, Christian Bracamontes");
-  OutCRLF();
+//  OutCRLF();
+//	UART_OutString("CECS 447");
+//  OutCRLF();
+//	UART_OutString("Project 1: Part 1");
+//  OutCRLF();
+//	UART_OutString("Johnny Cuenca, Christian Bracamontes");
+//  OutCRLF();
   
   while(1){
 		//ofb7f7fbfi
@@ -54,7 +55,8 @@ int main(void){
 			GPIO_PORTF_DATA_R &= 0x08;															//used to clear data port, turn off other leds
 			GPIO_PORTF_DATA_R ^= 0x08;															//turn on green LED, and toggle it.
 			if((GPIO_PORTF_DATA_R &= 0x08) == 0){										//check if Green LED is off
-				UART_OutString("Green LED is off");OutCRLF();}				//Display green LED off.
+			
+			UART_OutString("Green LED is off");OutCRLF();}				//Display green LED off.
 			else{
 				UART_OutString("Green LED is on");OutCRLF();}					//Display Green LED on.
 		}
@@ -75,9 +77,11 @@ int main(void){
 				UART_OutString("Blue LED is on");OutCRLF();}					//Display Blue on.
 		}
 		else{
-			UART_OutString("InString: ");
+			//UART_OutString("InString: ");
 			UART_InString(string,19);
-			UART_OutString(" OutString="); UART_OutString(string); OutCRLF();
+			//UART_OutString(" OutString="); 
+			UART_OutString(string); 
+			OutCRLF();
 		}
 		display();
 		Delay(833333);

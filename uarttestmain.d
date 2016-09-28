@@ -4,3 +4,4 @@
 .\uarttestmain.o: tm4c123gh6pm.h
 .\uarttestmain.o: EdgeTrigured_Init.h
 .\uarttestmain.o: Nokia5110.h
+.\uarttestmain.o: ADC.h

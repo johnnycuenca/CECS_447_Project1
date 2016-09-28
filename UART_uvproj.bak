@@ -430,6 +430,16 @@
               <FileType>1</FileType>
               <FilePath>.\EdgeTrigured_Init.c</FilePath>
             </File>
+            <File>
+              <FileName>Nokia5110.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Nokia5110.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ADC.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
